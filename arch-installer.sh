@@ -43,7 +43,7 @@ pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 
 cp chroot_commands.sh /mnt/
-cp install_yay.sh /mnt/
+cp install_yay.sh /mnt/home/tyler # change tyler to your username
 # chroot into new system
 arch-chroot /mnt /chroot_commands.sh &&
 echo "Successfully ran the chroot commands!"
