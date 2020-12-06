@@ -44,7 +44,7 @@ usermod -aG wheel tyler # add user to wheel
 
 # set user's password
 echo "Enter a password for your main user."
-passwd
+passwd tyler # replace tyler with your username
 
 # change sudoers file
 echo "Change the Sudoers file to your needs!"
