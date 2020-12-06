@@ -33,10 +33,18 @@ grub-mkconfig -o /boot/grub/grub.cfg
 pacman -S amd-ucode # amd only
 # pacman -S intel-ucode # intel only
 
+# install dhcpcd ( ethernet service? or wired connection)
+pacman -S dhcpcd
+systemctl enable dhcpcd # enable dhcpcd
+
 # install sudo
 pacman -S sudo vim
 useradd -m tyler # replace tyler with your username
 usermod -aG wheel tyler # add user to wheel
+
+# set user's password
+echo "Enter the main user's password."
+passwd
 
 # change sudoers file
 echo "Change the Sudoers file to your needs!"
@@ -74,10 +82,13 @@ pacman -S base-devel
 
 # install git
 pacman -S git
+
+echo "Enter your main user's password."
+su tyler
 # install yay
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+sudo makepkg -si
 cd ..
 rm -r yay
 
