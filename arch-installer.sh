@@ -43,9 +43,11 @@ pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 
 cp chroot_commands.sh /mnt/
+cp install_yay.sh /mnt/
 # chroot into new system
 arch-chroot /mnt /chroot_commands.sh &&
 echo "Successfully ran the chroot commands!"
 rm /mnt/chroot_commands.sh
+rm /mnt/install_yay.sh
 
 echo "Please Reboot."
