@@ -48,6 +48,5 @@ cp install_yay.sh /mnt/
 arch-chroot /mnt /chroot_commands.sh &&
 echo "Successfully ran the chroot commands!"
 rm /mnt/chroot_commands.sh
-rm /mnt/install_yay.sh
 
 echo "Please Reboot."
