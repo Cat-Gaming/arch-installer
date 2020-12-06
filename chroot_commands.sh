@@ -51,8 +51,8 @@ echo "Change the Sudoers file to your needs!"
 sleep 4
 EDITOR=vim visudo
 
-chown tyler:tyler /home/tyler # makes {username} own the directory
 mkdir /home/tyler # change this to your username
+chown tyler:tyler /home/tyler # makes {username} own the directory
 cd /home/tyler # change this to your username
 
 # remove vim
