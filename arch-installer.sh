@@ -46,5 +46,6 @@ cp chroot_commands.sh /mnt/
 # chroot into new system
 arch-chroot /mnt /chroot_commands.sh &&
 echo "Successfully ran the chroot commands!"
+rm /mnt/chroot_commands.sh
 
 echo "Please Reboot."
