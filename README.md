@@ -1,7 +1,7 @@
 # arch-installer
 
 # About
-This installs a install of Arch Linux with some extra stuff that I use like vim, vscode, etc
+This installs a install of Arch Linux with some extra stuff that I use like vim, vscode, etc.
 
 # Installing
 
