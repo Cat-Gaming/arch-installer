@@ -83,6 +83,8 @@ pacman -S base-devel
 # install git
 pacman -S git
 
+cd /
+
 echo "Enter your main user's password."
 su tyler -c "install_yay.sh"
 
