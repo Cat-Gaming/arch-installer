@@ -43,7 +43,7 @@ useradd -m tyler # replace tyler with your username
 usermod -aG wheel tyler # add user to wheel
 
 # set user's password
-echo "Enter the main user's password."
+echo "Enter a password for your main user."
 passwd
 
 # change sudoers file
