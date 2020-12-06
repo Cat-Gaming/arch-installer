@@ -13,9 +13,9 @@ echo LANG=en_US.UTF-8 > /etc/locale.conf
 # network configuration
 echo tyler-pc > /etc/hostname # just my personal preferance
 # more network configuration
-echo "127.0.0.1    localhost" > hosts
-echo "::1          localhost" >> hosts
-echo "127.0.1.1    tyler-pc.localdomain tyler-pc" >> hosts # replace tyler-pc with your hostname
+echo "127.0.0.1    localhost" > /etc/hosts
+echo "::1          localhost" >> /etc/hosts
+echo "127.0.1.1    tyler-pc.localdomain tyler-pc" >> /etc/hosts # replace tyler-pc with your hostname
 
 # make an initramfs
 mkinitcpio -P
