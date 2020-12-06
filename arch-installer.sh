@@ -1,7 +1,8 @@
 #!/bin/bash
 
-if [[ $(ls -A) ]]; then
-    echo "there are files"
+if [[ $(ls /sys/firmware/efi/efivars) ]]; then
+    echo "Booted in UEFI Mode."
 else
-    echo "no files found"
+    echo "Error Not Booted in UEFI Mode"
+    read -p "Error" input
 fi
