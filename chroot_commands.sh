@@ -85,8 +85,8 @@ pacman -S git
 
 cd /
 
-echo "Enter your main user's password."
-su tyler -c "install_yay.sh"
+eho "Make sure to install yay if you want to at first boot using the script in the root directory!"
+sleep 4
 
 echo Done!
 sleep 2
