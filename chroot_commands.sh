@@ -87,7 +87,7 @@ pacman -S git
 
 cd /
 
-eho "Make sure to install yay if you want to at first boot using the script in the home directory!"
+echo "Make sure to install yay if you want to at first boot using the script in the home directory!"
 sleep 4
 
 echo Done!
