@@ -62,7 +62,9 @@ pacman -R vim
 pacman -S wget
 
 # install extra stuff and vim because i like it
-pacman -S firefox terminator visual-studio-code-bin vim # my extra stuff you dont need this if you dont want it
+pacman -S firefox terminator vim # my extra stuff you dont need this if you dont want it
+
+# pacman -S visual-studio-code-bin # doesn't work because yay isn't installed
 
 # make my directories
 mkdir code
