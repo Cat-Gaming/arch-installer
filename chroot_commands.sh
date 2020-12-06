@@ -84,13 +84,7 @@ pacman -S base-devel
 pacman -S git
 
 echo "Enter your main user's password."
-su tyler
-# install yay
-git clone https://aur.archlinux.org/yay.git
-cd yay
-sudo makepkg -si
-cd ..
-rm -r yay
+su tyler -c "install_yay.sh"
 
 echo Done!
 sleep 2
